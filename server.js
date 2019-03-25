@@ -63,19 +63,19 @@ hbs.registerHelper('pageAuthor', (text) => {
     return text.toUpperCase();
 });
 
-app.use((request, response, next) => {
-    // var time = new Date().toString();
-    // //console.log(`${time}: ${request.method} ${request.url}`);
-    // var log = `${time}: ${request.method} ${request.url}`;
-    // fs.appendFile('server.log', log + '\n', (error) => {
-    //     if (error) {
-    //         console.log('Unable to log message');
-    response.render('maintenance.hbs', {
-        title: 'This site is down for maintenance',
-        welcome: 'This site is down for maintenance',
-        Author: 'Marty Maintenance'
-    });
-});
+// app.use((request, response, next) => {
+//     // var time = new Date().toString();
+//     // //console.log(`${time}: ${request.method} ${request.url}`);
+//     // var log = `${time}: ${request.method} ${request.url}`;
+//     // fs.appendFile('server.log', log + '\n', (error) => {
+//     //     if (error) {
+//     //         console.log('Unable to log message');
+//     response.render('maintenance.hbs', {
+//         title: 'This site is down for maintenance',
+//         welcome: 'This site is down for maintenance',
+//         Author: 'Marty Maintenance'
+//     });
+// });
 
 app.get('/', (request, response) => {
     // response.send('<h1>Hello Express!</h1>');
